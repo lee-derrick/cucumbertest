@@ -3,7 +3,6 @@ Feature: Popular Movies Page
   I want to view the list of popular movies
   So that I can choose a movie to watch
 
-
   Scenario: User visits the popular movies page 1
     Given I am on the popular movies page 1
     Then I should see a list of movies
@@ -15,3 +14,7 @@ Feature: Popular Movies Page
   Scenario: User visits the popular movies page 3
     Given I am on the popular movies page 3
     Then I should see a list of movies
+
+  Scenario: Dummy test for CI
+    Given I open the Playwright homepage
+    Then the title should contain "Playwright"
