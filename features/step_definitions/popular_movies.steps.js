@@ -12,8 +12,13 @@ After(async () => {
   await browser.close();
 });
 
+
 Given('I am on the popular movies page', async function () {
   await page.goto('https://debs-obrien.github.io/playwright-movies-app?category=Popular&page=1');
+});
+
+Given('I am on the popular movies page {int}', async function (pageNumber) {
+  await page.goto(`https://debs-obrien.github.io/playwright-movies-app?category=Popular&page=${pageNumber}`);
 });
 
 Then('I should see a list of movies', async function () {

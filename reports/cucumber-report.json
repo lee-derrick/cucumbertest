@@ -1,0 +1,67 @@
+[
+  {
+    "description": "  As a user\n  I want to view the list of popular movies\n  So that I can choose a movie to watch",
+    "elements": [
+      {
+        "description": "",
+        "id": "popular-movies-page;user-visits-the-popular-movies-page",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "User visits the popular movies page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2539182499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the popular movies page",
+            "match": {
+              "location": "features\\step_definitions\\popular_movies.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 430809699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see a list of movies",
+            "match": {
+              "location": "features\\step_definitions\\popular_movies.steps.js:19"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 70234300,
+              "error_message": "Error: No movies found on the page\n    at World.<anonymous> (C:\\Users\\DerrickLee\\OneDrive - Basis Technologies\\Documents\\Demo\\Cucumber Demo\\features\\step_definitions\\popular_movies.steps.js:22:11)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:459:9)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 473603000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "popular-movies-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Popular Movies Page",
+    "tags": [],
+    "uri": "features\\popular_movies.feature"
+  }
+]
