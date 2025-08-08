@@ -1,3 +1,7 @@
+
+const { Given, Then, Before, After } = require('@cucumber/cucumber');
+const { chromium } = require('playwright');
+
 Given('I open the Playwright homepage', async function () {
   await page.goto('https://playwright.dev/');
 });
@@ -8,8 +12,6 @@ Then('the title should contain {string}', async function (expected) {
     throw new Error(`Expected title to contain '${expected}', but got '${title}'`);
   }
 });
-const { Given, Then, Before, After } = require('@cucumber/cucumber');
-const { chromium } = require('playwright');
 
 let browser, page;
 
