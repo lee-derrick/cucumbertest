@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Install Chromium Browser
-        run: npx playwright install --with deps chromium
+        run: npx playwright install chromium
 
       - name: Run Cucumber tests
         run: npm test
