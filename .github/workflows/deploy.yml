@@ -37,14 +37,14 @@ jobs:
         run: npm test
         continue-on-error: true
 
-      - name: Publish Test Report
-        if: always()
-        uses: dorny/test-reporter@v1
-        with:
-          name: Cucumber Report
-          path: reports/ui/cucumber-report.xml
-          reporter: java-junit
-          fail-on-error: false
+      # - name: Publish Test Report
+      #   if: always()
+      #   uses: dorny/test-reporter@v1
+      #   with:
+      #     name: Cucumber Report
+      #     path: reports/ui/cucumber-report.xml
+      #     reporter: java-junit
+      #     fail-on-error: false
 
       - name: Upload Cucumber Report
         uses: actions/upload-pages-artifact@v3
